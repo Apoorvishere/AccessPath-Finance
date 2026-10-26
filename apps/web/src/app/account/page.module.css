@@ -1,0 +1,10 @@
+.page{--lime:#c7ff4d;min-height:100vh;background:#0e1015;color:#f3f4e9;font-family:var(--font-body),Arial,sans-serif}
+.page a{text-decoration:none}.page :is(a,button):focus-visible{outline:2px solid var(--lime);outline-offset:5px}
+.header{min-height:74px;padding:0 max(4vw,24px);display:flex;align-items:center;justify-content:space-between;gap:25px;border-bottom:1px solid #41474f}
+.header>a{color:#f3f4e9;font:800 20px var(--font-display),Arial,sans-serif;letter-spacing:-.06em}.header strong{color:var(--lime)}
+.signOutWrap{display:flex;align-items:center;gap:15px}.signOutWrap button{border:1px solid #68717a;background:#ffffff0c;color:#f3f4e9;padding:12px 17px;cursor:pointer;font:700 11px var(--font-mono),monospace;text-transform:uppercase}.signOutWrap button:hover{border-color:var(--lime);color:var(--lime)}.signOutWrap button:disabled{opacity:.5}.signOutWrap span{color:#ffc2b6;font-size:12px}
+.panel{max-width:1050px;padding:clamp(95px,13vw,170px) max(4vw,24px) 75px;margin:auto}.kicker,.note span{font:700 11px var(--font-mono),monospace;letter-spacing:.12em;color:var(--lime)}
+.panel h1{font:700 clamp(56px,8vw,112px)/.98 var(--font-display),Arial,sans-serif;letter-spacing:-.085em;margin:22px 0 28px}.panel>p:not(.kicker){max-width:680px;color:#c2c8ce;font-size:17px;line-height:1.65}.panel .email{color:var(--lime)!important;font:700 15px var(--font-mono),monospace!important;overflow-wrap:anywhere}
+.actions{display:flex;flex-wrap:wrap;gap:15px;margin-top:34px}.primary,.secondary{display:inline-flex;gap:20px;align-items:center;padding:17px 20px;font:800 11px var(--font-mono),monospace;text-transform:uppercase}.primary{background:var(--lime);color:#111510}.secondary{border:1px solid #677078;color:#f3f4e9}.primary:hover{background:#e2ff9c}.secondary:hover{border-color:var(--lime);color:var(--lime)}
+.note{max-width:1050px;margin:auto;padding:23px max(4vw,24px) 80px;border-top:1px solid #42474f}.note p{color:#b7bec5;line-height:1.6}
+@media(max-width:550px){.header>a{font-size:17px}.panel{padding-top:90px}.actions{flex-direction:column;align-items:flex-start}}

@@ -1,0 +1,62 @@
+.page { --ink:#212227; --sky:#bdd4e7; min-height:100vh; background:#e9eef2; color:var(--ink); }
+.page a { text-decoration:none; }
+.page :is(a,button,input,select):focus-visible { outline:3px solid #8693ab; outline-offset:3px; }
+.header { display:flex; align-items:center; gap:20px; min-height:78px; padding:0 clamp(20px,5vw,80px); background:var(--ink); color:white; }
+.brand { font:700 26px var(--font-display),Arial,sans-serif; letter-spacing:-.08em; }
+.brand span { color:var(--sky); }
+.header > span { margin-inline:auto; color:#aab9cf; font:500 10px var(--font-mono),monospace; letter-spacing:.06em; }
+.header button { border:0; background:none; color:var(--sky); font:500 11px var(--font-mono),monospace; cursor:pointer; }
+.shell { max-width:1280px; margin:auto; padding:clamp(40px,6vw,85px) clamp(20px,4vw,50px) 80px; }
+.eyebrow,.sectionIndex,.sectionHead,.fileLabel,.importForm label,.importForm small,.saved li small,.saved li span,.scope { font:500 10px var(--font-mono),monospace; letter-spacing:.04em; }
+.eyebrow { color:#546473; }
+.hero { display:grid; grid-template-columns:1fr auto; gap:20px; align-items:end; padding:25px 0 60px; }
+.hero h1 { margin:0; font:650 clamp(54px,6vw,88px)/.94 var(--font-display),Arial,sans-serif; letter-spacing:-.085em; }
+.hero h1 em { color:#7789a1; font-style:normal; }
+.hero p { max-width:580px; margin:22px 0 0; color:#4c5d67; line-height:1.75; }
+.heroCount { display:grid; gap:8px; min-width:160px; padding:18px; border-top:3px solid var(--ink); background:var(--sky); }
+.heroCount strong { font:650 65px/.9 var(--font-display),Arial,sans-serif; letter-spacing:-.08em; }
+.heroCount span { font:500 10px var(--font-mono),monospace; }
+.alert,.error { padding:15px 18px; background:#f2dfd6; color:#793421; }
+.importPanel { display:grid; grid-template-columns:.8fr 1.2fr; gap:55px; padding:35px; background:var(--sky); }
+.importPanel + .importPanel { margin-top:24px; background:#dce7ed; }
+.sectionIndex { color:#526775; }
+.importPanel h2,.saved h2 { margin:18px 0 12px; font:650 clamp(31px,3.5vw,47px) var(--font-display),Arial,sans-serif; letter-spacing:-.06em; }
+.importPanel p { max-width:365px; color:#455963; font-size:13px; line-height:1.7; }
+.importForm { display:grid; align-content:start; gap:20px; }
+.fileLabel { display:grid; gap:12px; }
+.fileLabel input { width:100%; padding:14px; border:1px solid #8195a2; background:#e6eef4; color:var(--ink); }
+.importForm form { display:grid; gap:18px; }
+.importForm form label { display:grid; gap:10px; }
+.importForm form label input { width:100%; min-height:52px; padding:14px; border:1px solid #8195a2; background:#e6eef4; font:500 14px var(--font-body),Arial,sans-serif; }
+.siteSelect { width:100%; min-height:52px; padding:14px; border:1px solid #8195a2; background:#e6eef4; color:var(--ink); font:500 14px var(--font-body),Arial,sans-serif; }
+.siteUrl { overflow-wrap:anywhere; color:#526775; }
+.importForm form button { display:flex; justify-content:space-between; padding:17px 19px; border:0; background:var(--ink); color:white; font-weight:700; cursor:pointer; transition:transform .2s,background .2s; }
+.importForm form button:hover:not(:disabled) { transform:translateY(-2px); background:#485b67; }
+.importForm form button:disabled { opacity:.6; }
+.importForm .error,.importForm .success { margin:0; font-size:12px; }
+.importForm .success { background:#d9e8df; color:#34594b; }
+.saved { margin-top:70px; }
+.sectionHead { display:flex; justify-content:space-between; gap:20px; padding-top:15px; border-top:1px solid #899ba8; color:#546473; }
+.saved ol { margin:35px 0 0; padding:0; list-style:none; }
+.saved li { display:grid; grid-template-columns:40px minmax(0,1fr) auto; gap:18px; align-items:start; padding:25px 0; border-top:1px solid #c3cdd5; }
+.index { color:#617481; }
+.saved li strong { display:block; font:650 21px var(--font-display),Arial,sans-serif; letter-spacing:-.04em; }
+.saved li small { display:block; overflow-wrap:anywhere; margin:8px 0; color:#526c7d; }
+.saved li div > span { color:#617481; }
+.saved li a { padding:10px 12px; border:1px solid var(--ink); font-size:11px; font-weight:700; transition:background .2s,color .2s; }
+.saved li a:hover { background:var(--ink); color:white; }
+.compareHelp,.compareSelected { color:#52636d; font-size:13px; line-height:1.6; }
+.compareSelected { padding:12px 15px; background:#dce7ed; }
+.compareAction { display:flex; justify-content:space-between; align-items:center; gap:18px; margin:20px 0; padding:16px 18px; background:#dce7ed; color:#344b58; font-size:12px; }
+.compareAction > div,.rowActions { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+.compareAction a,.rowActions a,.rowActions button,.compareAction button { padding:10px 12px; border:1px solid var(--ink); background:transparent; color:var(--ink); font-size:11px; font-weight:700; cursor:pointer; }
+.compareAction a:hover,.rowActions a:hover,.rowActions button:hover:not(:disabled),.compareAction button:hover { background:var(--ink); color:white; }
+.rowActions a { display:inline-block; }
+.rowActions button:disabled { opacity:.5; cursor:not-allowed; }
+.scanState { padding:10px 12px; border:1px solid #899ba8; color:#586b76; }
+.failureSummary { grid-column:2 / 4; max-width:760px; margin:-8px 0 0; padding:12px 14px; border-left:3px solid #8b4b3d; background:#f2dfd6; color:#58372f; font-size:12px; line-height:1.6; }
+.status { padding:25px; background:#dce7ed; color:#52636d; }
+.scope { margin-top:50px; color:#586b76; line-height:1.7; }
+@media(max-width:800px) { .importPanel { grid-template-columns:1fr; gap:25px; } }
+@media(max-width:560px) { .header > span { display:none; } .header button { margin-left:auto; } .hero { grid-template-columns:1fr; } .heroCount { width:170px; } .importPanel { padding:24px; } .saved li { grid-template-columns:25px 1fr; } .saved li a,.saved li .scanState { grid-column:2; width:fit-content; } .saved li .rowActions { grid-column:2; } .failureSummary { grid-column:2; margin:0; } .compareAction { align-items:flex-start; flex-direction:column; } }
+@media(prefers-reduced-motion:reduce) { .page * { transition-duration:.01ms !important; } }

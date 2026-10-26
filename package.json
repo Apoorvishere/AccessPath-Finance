@@ -1,0 +1,15 @@
+{
+  "name": "accesspath",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@12.14.0",
+  "scripts": {
+    "dev": "pnpm --filter ./apps/web dev",
+    "demo:local": "node scripts/dev-with-worker.mjs",
+    "build": "pnpm --filter ./apps/web build"
+  },
+  "devDependencies": {
+    "axe-core": "^4.14.0",
+    "playwright-core": "^1.64.1"
+  }
+}

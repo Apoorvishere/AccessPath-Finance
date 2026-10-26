@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">AccessPath: accessibility across the journey</title>
+  <desc id="description">Dark editorial banner with a three-step route from goal to evidence.</desc>
+  <style>
+    .word { font: 700 68px Arial, sans-serif; letter-spacing: -5px; }
+    .tag { font: 600 13px Arial, sans-serif; letter-spacing: 3px; }
+    .small { font: 500 12px Arial, sans-serif; letter-spacing: 1px; }
+    .step { font: 700 16px Arial, sans-serif; }
+    .cursor { animation: travel 5s ease-in-out infinite; }
+    .pulse { animation: pulse 5s ease-in-out infinite; }
+    @keyframes travel { 0%,8% { transform: translateX(0); } 45%,55% { transform: translateX(176px); } 90%,100% { transform: translateX(292px); } }
+    @keyframes pulse { 0%,75%,100% { opacity: .2; } 86% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .pulse { animation: none; } }
+  </style>
+  <rect width="1200" height="360" fill="#212227"/>
+  <path d="M0 318H1200M728 0V360" stroke="#637074" stroke-width="1" opacity=".5"/>
+  <rect x="62" y="55" width="46" height="46" fill="none" stroke="#BDD4E7" stroke-width="2"/>
+  <path d="M74 88V68h11c7 0 12 4 12 10s-5 10-12 10H74Zm6-13h11m-11 6h11" fill="none" stroke="#BDD4E7" stroke-width="2"/>
+  <text x="122" y="89" class="word" fill="#F6F9FB" font-size="31" style="font-size:31px;letter-spacing:-2px">accesspath<tspan fill="#BDD4E7">.</tspan></text>
+  <text x="64" y="179" class="tag" fill="#AAB9CF">A USER JOURNEY, MADE VISIBLE</text>
+  <text x="60" y="234" class="word" fill="#F6F9FB" style="font-size:57px;letter-spacing:-4px">Find what gets</text>
+  <text x="60" y="290" class="word" fill="#BDD4E7" style="font-size:57px;letter-spacing:-4px">in the way.</text>
+  <text x="64" y="338" class="small" fill="#AAB9CF">GOAL-DRIVEN NAVIGATION  /  EVIDENCE-LED ACCESSIBILITY</text>
+  <rect x="760" y="55" width="380" height="249" fill="#BDD4E7"/>
+  <text x="783" y="83" class="small" fill="#212227">JOURNEY RECORD / CONCEPT</text>
+  <path d="M806 161H1098" stroke="#637074" stroke-width="2"/>
+  <circle cx="806" cy="161" r="14" fill="#212227"/><circle cx="982" cy="161" r="14" fill="#212227"/><circle cx="1098" cy="161" r="14" fill="#212227"/>
+  <circle cx="806" cy="161" r="7" fill="#BDD4E7"/><circle cx="982" cy="161" r="7" fill="#BDD4E7"/><circle cx="1098" cy="161" r="7" fill="#BDD4E7"/>
+  <circle class="cursor" cx="806" cy="161" r="5" fill="#8693AB"/>
+  <text x="782" y="204" class="step" fill="#212227">Goal</text>
+  <text x="957" y="204" class="step" fill="#212227">Route</text>
+  <text x="1061" y="204" class="step" fill="#212227">Evidence</text>
+  <rect x="783" y="236" width="333" height="42" fill="#AAB9CF"/>
+  <text x="799" y="262" class="small" fill="#212227">FOLLOW THE TASK. FIND THE BARRIER.</text>
+  <rect class="pulse" x="1117" y="235" width="3" height="43" fill="#212227"/>
+</svg>

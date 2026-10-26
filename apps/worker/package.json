@@ -1,0 +1,22 @@
+{
+  "name": "@accesspath/worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "check": "tsc --noEmit",
+    "test": "tsx --test src/tinyfish.test.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0",
+    "axe-core": "4.14.0",
+    "playwright-core": "1.64.1",
+    "tsx": "^4.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "engines": { "node": ">=20" }
+}
